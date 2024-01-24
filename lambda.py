@@ -5,7 +5,7 @@ def lambda_handler(event, context):
     response = client.run_instances(
            ImageId='ami-0e9107ed11be76fde',
            InstanceType='t2.micro',
-           KeyName='docker',
+           KeyName='jenkins',
            MaxCount=1,
            MinCount=1
            )
